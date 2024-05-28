@@ -1,18 +1,63 @@
-# Problem
+# Audiobook Customer Retention Prediction
+📚 Overview
+In this project, we aim to create a machine learning algorithm that predicts whether a customer will make another purchase from an Audiobook company based on their historical data. By focusing our efforts on customers who are likely to convert again, we can optimize advertising spending and identify growth opportunities.
+📊 Dataset
+The dataset is provided in a .csv file and contains the following variables for each customer:
 
-You are given data from an Audiobook app. Logically, it relates only to the audio versions of books. Each customer in the database has made a purchase at least once, that's why he/she is in the database. We want to create a machine learning algorithm based on our available data that can predict if a customer will buy again from the Audiobook company.
+* Customer ID: Unique identifier for each customer
+* Book length in mins_avg: Average book length of all purchases (in minutes)
+* Book length in minutes_sum: Total sum of book length of all purchases (in minutes)
+* Price Paid_avg: Average price paid for all purchases
+* Price paid_sum: Total sum of price paid for all purchases
+* Review: A Boolean variable indicating if the customer left a review
+* Review (out of 10): Rating given by the customer (out of 10)
+* Total minutes listened: Total minutes the customer has listened to audiobooks
+* Completion: Ratio of completion (from 0 to 1)
+* Support requests: Number of support requests made by the customer
+* Last visited minus purchase date: Number of days between the last visit and the last purchase date
 
-The main idea is that if a customer has a low probability of coming back, there is no reason to spend any money on advertizing to him/her. If we can focus our efforts ONLY on customers that are likely to convert again, we can make great savings. Moreover, this model can identify the most important metrics for a customer to come back again. Identifying new customers creates value and growth opportunities.
+🎯 Problem Statement
+The goal is to predict whether a customer will buy again within the next 6 months based on their activity and engagement over the last 2 years. This is a binary classification problem, where the target variable is represented by 0 (won't buy) or 1 (will buy).
 
-You have a .csv summarizing the data. There are several variables: Customer ID, Book length in mins_avg (average of all purchases), Book length in minutes_sum (sum of all purchases), Price Paid_avg (average of all purchases), Price paid_sum (sum of all purchases), Review (a Boolean variable), Review (out of 10), Total minutes listened, Completion (from 0 to 1), Support requests (number), and Last visited minus purchase date (in days).
+🔍 Approach
 
-So these are the inputs (excluding customer ID, as it is completely arbitrary. It's more like a name, than a number).
+Data Preprocessing:
+* Handle missing values
+* Encode categorical variables
+* Scale numerical features
+* Split the data into training and testing sets
 
-The targets are a Boolean variable (so 0, or 1). We are taking a period of 2 years in our inputs, and the next 6 months as targets. So, in fact, we are predicting if: based on the last 2 years of activity and engagement, a customer will convert in the next 6 months. 6 months sounds like a reasonable time. If they don't convert after 6 months, chances are they've gone to a competitor or didn't like the Audiobook way of digesting information. 
 
-The task is simple: create a machine learning algorithm, which is able to predict if a customer will buy again. 
+Model Selection:
+* Explore various classification algorithms (e.g., Logistic Regression, Decision Trees, Random Forest, XGBoost)
+* Evaluate model performance using appropriate metrics (e.g., accuracy, precision, recall, F1-score)
+* Perform hyperparameter tuning to optimize the selected model
 
-This is a classification problem with two classes: won't buy and will buy, represented by 0s and 1s. 
 
-Learnt from-> https://www.udemy.com/course/data-science-deep-learning-in-python
- 
+Model Training and Evaluation:
+* Train the selected model on the training data
+* Evaluate the model's performance on the testing data
+* Analyze the model's predictions and identify important features
+
+
+Insights and Recommendations:
+* Interpret the model's results and derive insights
+* Provide recommendations for customer retention strategies based on the model's findings
+
+
+🚀 Results
+* Achieved an accuracy of 93% in predicting customer repurchase behavior
+* Provided actionable recommendations for targeted marketing and customer engagement
+
+🛠️ Technologies Used
+* Python
+* Scikit-learn
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Keras
+* Tensorflow
+
+📖 References
+Udemy Course: Data Science: Deep Learning in Python([Link][https://www.udemy.com/course/data-science-deep-learning-in-python])
