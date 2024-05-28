@@ -35,6 +35,7 @@ The goal is to predict whether a customer will buy again within the next 6 month
   * Train the selected model on the training data
   * Evaluate the model's performance on the testing data
   * Analyze the model's predictions and identify important features
+  * Performed advanced techniques like early stopping mechanism to avoid overfitting which leads to high variance.
   
 4. Insights and Recommendations:
   * Interpret the model's results and derive insights
@@ -42,7 +43,7 @@ The goal is to predict whether a customer will buy again within the next 6 month
 
 🚀 Results
 * Achieved an accuracy of 93% in predicting customer repurchase behavior
-* Provided actionable recommendations for targeted marketing and customer engagement
+* Deducted actionable recommendations for targeted marketing and customer engagement
 
 🛠️ Technologies Used
 * Python
