@@ -20,23 +20,23 @@ The dataset is provided in a .csv file and contains the following variables for 
 The goal is to predict whether a customer will buy again within the next 6 months based on their activity and engagement over the last 2 years. This is a binary classification problem, where the target variable is represented by 0 (won't buy) or 1 (will buy).
 
 🔍 Approach
-  Data Preprocessing:
+1. Data Preprocessing:
   * Handle missing values
   * Encode categorical variables
   * Scale numerical features
   * Split the data into training and testing sets
   
-  Model Selection:
+2. Model Selection:
   * Explore various classification algorithms (e.g., Logistic Regression, Decision Trees, Random Forest, XGBoost)
   * Evaluate model performance using appropriate metrics (e.g., accuracy, precision, recall, F1-score)
   * Perform hyperparameter tuning to optimize the selected model
   
-  Model Training and Evaluation:
+3. Model Training and Evaluation:
   * Train the selected model on the training data
   * Evaluate the model's performance on the testing data
   * Analyze the model's predictions and identify important features
   
-  Insights and Recommendations:
+4. Insights and Recommendations:
   * Interpret the model's results and derive insights
   * Provide recommendations for customer retention strategies based on the model's findings
 
